@@ -1,0 +1,87 @@
+/* Future Goals Section */
+.future {
+    padding: 20px;
+    background: linear-gradient(135deg, #783bb9, #1e3151);
+    color: #fff;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .future.expanded {
+    transform: scale(1.05); /* Slight zoom effect when expanded */
+  }
+  
+  .future-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffebc8;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+    color: #ffd700;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.rotate {
+    transform: rotate(180deg); /* Rotate arrow on click */
+  }
+  
+  .future-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .future-list li {
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+    animation: slideIn 0.5s ease;
+  }
+  
+  .future-list h3 {
+    font-size: 1.8rem;
+    color: #ffd700;
+  }
+  
+  .future-list p {
+    margin: 10px 0;
+    color: #ffe4e1;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

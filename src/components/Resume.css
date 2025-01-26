@@ -1,0 +1,37 @@
+/* Resume Section Styling */
+.resume {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #000; /* Pure black background */
+  color: #fff; /* White text for contrast */
+  margin: 30px auto; /* Center the section horizontally */
+  max-width: 400px; /* Limit the section width */
+  border-radius: 10px; /* Subtle rounded corners */
+}
+
+/* Hide the heading and paragraph for minimal design */
+.resume h2,
+.resume p {
+  display: none;
+}
+
+/* Resume Button Styling */
+.resume-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff; /* White button for contrast */
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Button shadow */
+}
+
+.resume-btn:hover {
+  color: #fff;
+  background-color: #444; /* Subtle dark gray on hover */
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); /* Stronger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
